@@ -37,7 +37,7 @@ function App() {
           onClick={toggleTheme}
           className={isDark ? 'bg-gray-700 px-4 py-2 rounded' : 'bg-gray-200 px-4 py-2 rounded'}
         >
-          {isDark ? '☀️ Light' : '🌙 Dark'}
+          {isDark ? ' Light' : ' Dark'}
         </button>
       </div>
 
