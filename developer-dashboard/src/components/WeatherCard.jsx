@@ -27,7 +27,7 @@ const WeatherCard = ({ darkMode }) => {
         const json = await res.json();
         const c = json.current;
 
-        // Map Open-Meteo weather_code into simple words
+        // Map Open-Meteo weather code into simple words
         const code = c.weather_code;
         let condition = 'Clouds';
         if (code === 0) condition = 'Clear';
@@ -65,7 +65,7 @@ const WeatherCard = ({ darkMode }) => {
 
   // UI states
   if (loading) {
-    return <div className={`p-4 rounded-lg shadow ${box}`}>Loading weather…</div>;
+    return <div className={`p-4 rounded-lg shadow ${box}`}>Weather Loading ...</div>;
   }
 
   if (error) {
